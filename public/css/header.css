@@ -1,3 +1,118 @@
 .header {
-	flex: 0 1 80px;
+	flex: 0 1 auto;
+	height: 832px;
+	width: 100%;
+}
+.header__background {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	background: linear-gradient(180deg, rgba(12, 12, 12, 1) 0%, rgba(67, 67, 67, 1) 100%);
+}
+
+.header__background img {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	border-radius: 50%;
+	box-shadow: 4px 5.5px 24px #fff;
+	width: 550px;
+	height: 550px;
+	object-fit: cover;
+}
+.container {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.header__container {
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+.header__title_box {
+	flex: 0 1 130px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.circle {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		linear-gradient(140.08deg, #9cd2ee 3.42%, #00acee 95.98%);
+}
+.header__title {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 0.02em;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.header__menu_list {
+	margin-left: 80px;
+	flex: 1 1 auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	gap: 35px;
+}
+.list__item {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 0.02em;
+	color: #fff;
+	cursor: pointer;
+}
+
+.header__text_container {
+	margin-top: 150px;
+	width: 470px;
+	max-height: 600px;
+	overflow: hidden;
+	font-family: "Montserrat";
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+.big__white_title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 68px;
+	letter-spacing: 0.02em;
+	color: #fff;
+}
+.text__item_box {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 32px;
+	letter-spacing: 0.02em;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.header__container form {
+}
+.form__box {
+	display: flex;
+	gap: 30px;
+}
+
+.form__box .form__btn {
+	box-shadow: none;
+	height: 48px;
+	width: 155px;
 }

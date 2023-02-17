@@ -25,8 +25,7 @@ textarea {
 
 .wrapper {
 	width: 100%;
-	padding: 10px;
-	height: calc(100vh - 10px);
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
@@ -34,4 +33,17 @@ textarea {
 .container {
 	max-width: var(--max);
 	margin: 0 auto;
+}
+
+form > button {
+	cursor: pointer;
+}
+
+form .form__btn {
+	cursor: pointer;
+	background: linear-gradient(132.95deg, #ffc301 9.31%, #ff6533 79.4%);
+	box-shadow: 15px 15px 35px rgba(226, 142, 15, 0.18);
+	border-radius: 10px;
+	width: 113px;
+	height: 48px;
 }
