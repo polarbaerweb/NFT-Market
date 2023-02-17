@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
 const bodyParser = require("body-parser")
-app.use(express.static("pubclic"))
+app.use(express.static("."))
 app.set("view engine", "ejs")
 
 app.get("/", function(req, res){
@@ -9,4 +9,4 @@ app.get("/", function(req, res){
 })
 
 
-app.listen(3500)
+app.listen(300)
